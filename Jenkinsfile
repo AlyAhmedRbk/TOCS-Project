@@ -11,7 +11,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing App...'
-                sh 'node App.js'
                 sh 'gcloud compute zones list'
             }
       }
