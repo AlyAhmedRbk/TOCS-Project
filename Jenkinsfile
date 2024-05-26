@@ -12,11 +12,5 @@ pipeline {
                 echo 'Testing App...'
             }
       }
-        }
-        stage('deloy') {
-            steps {
-                echo 'Deploying App...'
-            }
-      }
    }
 }
