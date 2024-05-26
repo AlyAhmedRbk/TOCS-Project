@@ -5,13 +5,17 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building App...'
-                sh  'node --version'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing App...'
-                sh 'gcloud compute zones list'
+            }
+      }
+        }
+        stage('deloy') {
+            steps {
+                echo 'Deploying App...'
             }
       }
    }
