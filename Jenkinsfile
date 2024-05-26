@@ -10,6 +10,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing App...'
+                // sh 'gcloud compute zones list'
+                sh 'gcloud compute scp /var/lib/jenkins/workspace/TOCS-Project_main/index.html root@apache-server:/var/www/html --zone=us-central1-f'
             }
       }
    }
