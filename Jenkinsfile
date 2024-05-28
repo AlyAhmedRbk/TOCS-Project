@@ -12,6 +12,7 @@ pipeline {
                 echo 'Testing App...'
                 // sh 'gcloud compute zones list'
                 sh 'gcloud compute scp /var/lib/jenkins/workspace/Devops-Project_main/index.html root@apache-server:/var/www/html --zone=us-central1-f'
+                sh 'gcloud compute scp /var/lib/jenkins/workspace/Devops-Project_main/styles.css root@apache-server:/var/www/html --zone=us-central1-f'
             }
       }
    }
