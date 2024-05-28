@@ -88,6 +88,10 @@ ul li a:active{
     font-size: 18px;
 }
 
+.btn:hover{
+    background-color: #3c58b4d9;
+}
+
 .btn a{
     text-decoration: none;
     color: #fff;
