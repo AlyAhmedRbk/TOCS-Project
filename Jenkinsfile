@@ -16,7 +16,7 @@ pipeline {
                 sh 'gcloud compute scp /var/lib/jenkins/workspace/Devops-Project_main/about.html root@apache-server:/var/www/html --zone=us-central1-f'
                 sh 'gcloud compute scp /var/lib/jenkins/workspace/Devops-Project_main/contact.html root@apache-server:/var/www/html --zone=us-central1-f'
                 sh 'gcloud compute scp /var/lib/jenkins/workspace/Devops-Project_main/services.html root@apache-server:/var/www/html --zone=us-central1-f'
-                sh 'gcloud compute scp /var/lib/jenkins/workspace/Devops-Project_main/ALY\ CV\ WEB.pdf root@apache-server:/var/www/html --zone=us-central1-f'
+                sh 'gcloud compute scp /var/lib/jenkins/workspace/Devops-Project_main/'ALY CV WEB.pdf' root@apache-server:/var/www/html --zone=us-central1-f'
             }
       }
    }
